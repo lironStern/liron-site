@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="more-styles.css" />
+
+    <title>Liron Stern site</title>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <nav class="navbar">
+          <div class="image">
+            <img src="images/me.jpg" alt="me" />
+          </div>
+
+          <ul class="nav-menu">
+            <span class="dot nav-el"></span>
+            <span class="dots nav-el"></span>
+            <li><a class="nav-el link-el" href="index.html">HOME</a></li>
+            <span class="dots nav-el"></span>
+            <li>
+              <a class="active nav-el link-el link-el" href="#" id="link-about-me" onClick="clickOnLink('link-about-me')">ABOUT ME</a>
+            </li>
+            <span class="dots nav-el"></span>
+            <li>
+              <a class="nav-el link-el" href="#" id="link-resume" onClick="clickOnLink('link-resume')">RESUME</a>
+            </li>
+            <span class="dots nav-el"></span>
+            <li><a class="nav-el link-el" href="#" id="link-protfolio" onClick="clickOnLink('link-protfolio')">PORTFOLIO</a></li>
+            <span class="dots nav-el"></span>
+            <li><a class="nav-el link-el" href="#" id="link-testimonials" onClick="clickOnLink('link-testimonials')">TESTIMONIALS</a></li>
+            <span class="dots nav-el"></span>
+            <li><a class="nav-el link-el" href="#" id="link-contact" onClick="clickOnLink('link-contact')">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="right">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+         <!-- ABOUT ME  -->
+        <div class="about-me chapter active-div">
+          <header>
+            <h1>ABOUT ME</h1>
+          </header>
+
+          <div class="about-me-top">
+            <h2>
+              I'm <strong>Liron Stern</strong>, QA Tester and Frontend Programer
+            </h2>
+            <p>
+              Renewable energy sources, such as solar, wind, hydro, and
+              geothermal power, offer a promising solution to mitigate the
+              adverse effects of climate change and reduce dependence on finite
+              fossil fuels. Solar energy harnesses the power of sunlight through
+              photovoltaic cells, providing clean electricity for homes and
+              businesses.
+            </p>
+          </div>
+          <div class="about-me-bottom">
+            <div class="numbers">
+              <div>
+                <div class="square top-left">
+                  <span class="number">250+</span>
+                  <p class="text">Facebook friends</p>
+                </div>
+
+                <div class="square top-right">
+                  <span class="number">800+</span>
+                  <p class="text">LinkedIn followers</p>
+                </div>
+              </div>
+              <div>
+                <div class="square bottom-left">
+                  <span class="number">2</span>
+                  <p class="text">cute cats</p>
+                </div>
+                <div class="square buttom-right">
+                  <span class="number">1</span>
+                  <p class="text">Amazing daughter</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="what-i-do">
+              <h3>What I Do?</h3>
+
+              <div class="row">
+                <div class="do-icon">
+                  <img src="images/to-do-alt.png" />
+                </div>
+                <div class="description">
+                  <h4>QA TESTER</h4>
+                  <div>
+                    Renewable energy sources, offer a promising solution to
+                    mitigate
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="do-icon">
+                  <img src="images/binary.png" />
+                </div>
+                <div class="description">
+                  <h4>FRONTEND DEVELOPER</h4>
+                  <div>
+                    Solar energy harnesses the power photovoltaic cells,
+                    providing clean
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="do-icon">
+                  <img src="images/webmaster.png" />
+                </div>
+                <div class="description">
+                  <h4>WEBMASTER</h4>
+                  <div>
+                    Wind energy utilizes the kinetic to generate electricity
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END ABOUT ME  -->
+
+        <!-- RESUME  -->
+        <div class="resume chapter not-active-div">
+          <header>
+            <h1>RESUME</h1>
+          </header>
+          <div class="container">
+           
+              <h2>EDUCATION</h2>
+              <div class="details">
+                <div>
+                  <h3>&nbsp;&nbsp;2024&nbsp;&nbsp;</h3>
+                  <h4>QA - Gal Matlon</h4>
+                  <p>geothermal power, offer a promising solution to mitigate, geothermal power, offer a promising solution to mitigate</p>
+                </div>
+                <div>
+                  <h3>&nbsp;&nbsp;2021&nbsp;&nbsp;</h3>
+                  <h4>FullStack - John Bryce</h4>
+                  <p>geothermal power, offer a promising solution to mitigate, geothermal power, offer a promising solution to mitigate</p>
+                </div>
+                <div>
+                  <h3>&nbsp;&nbsp;2002&nbsp;&nbsp;</h3>
+                  <h4>Software Engineer - College of Management</h4>
+                  <p>geothermal power, offer a promising solution to mitigate, geothermal power, offer a promising solution to mitigate</p>
+                </div>
+              </div>
+  
+            </div>
+            <hr>
+            <div class="container">
+              <h2>EXPERIENCE</h2>
+              <div class="details">
+                <div>
+                  <h3>&nbsp;&nbsp;2022-2017&nbsp;&nbsp;</h3>
+                  <h4>Frontend Programer</h4>
+                  <p>Renewable energy sources, such as solar, wind, Renewable energy sources, such as solar, wind</p>
+                </div>
+                <div>
+                  <h3>&nbsp;&nbsp;2017-2003&nbsp;&nbsp;</h3>
+                  <h4>Webmaster</h4>
+                  <p>Renewable energy sources, such as solar, wind, Renewable energy sources, such as solar, wind</p>
+                </div>
+                <div>
+                  <h3>&nbsp;&nbsp;2000-2001&nbsp;&nbsp;</h3>
+                  <h4>Office Instructor</h4>
+                  <p>Renewable energy sources, such as solar, wind, Renewable energy sources, such as solar, wind</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- END RESUME  -->
+
+         <!-- PORTFOLIO  -->
+         <div class="protfolio chapter not-active-div">
+          <header>
+            <h1>PORTFOLIO</h1>
+          </header>
+          <div class="container-images">
+            <img src="images/darwin.png" alt="quiz-image"/>
+            <img src="images/nim.png" alt="quiz-image"/>
+            <img src="images/evolution.png" alt="quiz-image"/>
+            <img src="images/darwin.png" alt="quiz-image"/>
+            <img src="images/darwin.png" alt="quiz-image"/>
+            <img src="images/darwin.png" alt="quiz-image"/>
+          </div>
+         </div>
+        <!-- END PORTFOLIO  -->
+
+        <!-- TESTIMONIALS  -->
+        <div class="testimonials chapter not-active-div">
+          <header>
+            <h1>TESTIMONIALS</h1>
+          </header>
+          <div class="container-testimonials">
+            <div class="one-testimonial">
+              <div class="testimonials-top">
+                <img src="images/woman.jpg" alt="woman-image"/>
+                <div>
+                  <h2>Ahuva</h2>
+                  <h3>My Mom</h3>
+                  <p> Renewable energy sources, offer a promising solution to
+                    mitigate </p>
+                </div>
+              </div>
+              <div class="testimonials-bottom">
+                  <div>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                 </div>
+                 <span>Jnuary</span>
+              </div>   
+            </div>
+            <div class="one-testimonial">
+              <div class="testimonials-top">
+                <img src="images/woman.jpg" alt="woman-image"/>
+                <div>
+                  <h2>Shuly</h2>
+                  <h3>My Mom</h3>
+                  <p> Renewable energy sources, offer a promising solution to
+                    mitigate</p>
+                </div>
+              </div>
+              <div class="testimonials-bottom">
+                  <div>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                 </div>
+                 <span>Jnuary</span>
+              </div>   
+            </div>
+            <div class="one-testimonial">
+              <div class="testimonials-top">
+                <img src="images/woman.jpg" alt="woman-image"/>
+                <div>
+                  <h2>Bat-Ami</h2>
+                  <h3>My Mom</h3>
+                  <p> Renewable energy sources, offer a promising solution to
+                    mitigate</p>
+                </div>
+              </div>
+              <div class="testimonials-bottom">
+                  <div>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                 </div>
+                 <span>Jnuary</span>
+              </div>   
+            </div>
+            <div class="one-testimonial">
+              <div class="testimonials-top">
+                <img src="images/woman.jpg" alt="woman-image"/>
+                <div>
+                  <h2>Yossi</h2>
+                  <h3>My Mom</h3>
+                  <p> Renewable energy sources, offer a promising solution to
+                    mitigate</p>
+                </div>
+              </div>
+              <div class="testimonials-bottom">
+                  <div>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                    <img src="images/star.png" alt="star" class="star"/>
+                 </div>
+                 <span>Jnuary</span>
+              </div>   
+            </div>
+          </div>
+        </div>
+        <!-- END TESTIMONIALS  -->
+
+        <!-- CONTACT  -->
+        <div class="contact chapter not-active-div">
+          <header>
+            <h1>CONTACT</h1>
+          </header>
+          <div class="container-contact">
+            <h2>Fill <strong>free</strong> to contact me:</h2>
+            <div class="contact-center">
+            
+                <div class="one-contact">
+                  <img src="images/phone-call.png" alt="phone-call"/>
+                  <span>054-7827347</span>
+                </div>
+                <div class="one-contact">
+                  <img src="images/linkdin.png" alt="linkdin"/>
+                  <a href="https://www.linkedin.com/in/liron-stern-a88345165/" target="_blank">Linkdin</a>
+                </div>
+                <div class="one-contact">
+                  <img src="images/email.png" alt="email"/>
+                  <a href="mailto:lironweiz@gmail.com">lironweiz@gmail.com</a>
+                </div>
+            </div>
+            <h3>THANKS FOR PATIENCE</h3>
+          </div>
+          
+         </div>
+        <!-- END CONTACT  -->
+
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
