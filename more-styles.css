@@ -13,11 +13,11 @@ a {
   color: white;
 }
 
-.not-active-div{
+.not-active-div {
   display: none;
 }
 
-.active-div{
+.active-div {
   display: block;
 }
 
@@ -48,7 +48,7 @@ main {
 
 .right {
   width: 80%;
-  height:100vh;
+  height: 100vh;
   background-color: #dcdcdc;
   padding: 0 5rem;
 }
@@ -131,7 +131,7 @@ ul.nav-menu li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin-right: 2rem;
 }
 
@@ -211,19 +211,18 @@ ul.nav-menu li {
 }
 
 /* EXPERIENCE */
-.container h2{
-  font-weight: 900;
-
+.resume .container h2 {
+  font-weight: 500;
 }
-.details{
+.details {
   display: flex;
 }
 
-.details div{
+.details div {
   margin-right: 3rem;
 }
 
-.details h3{
+.details h3 {
   display: inline-block;
   font-weight: 400;
   color: white;
@@ -231,31 +230,31 @@ ul.nav-menu li {
   margin-bottom: 5px;
 }
 
-.details h4{
+.details h4 {
   font-size: 18px;
   font-weight: 500;
 }
 
 /* PORTFOLIO */
 
-.container-images{
+.container-images {
   text-align: center;
 }
 
-.container-images img{
-  margin: 15px 8px;
+.container-images img {
+  margin: 15px;
   border-radius: 5px;
-  border: 2px solid  #fec02f;
+  border: 4px solid #fec02f;
 }
 
 /* TESTIMONIALS */
 
-.container-testimonials{
+.container-testimonials {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.one-testimonial{
+.one-testimonial {
   display: flex;
   flex-direction: column;
   width: 47%;
@@ -265,85 +264,85 @@ ul.nav-menu li {
   border-radius: 5px;
 }
 
-
-.one-testimonial .testimonials-top{
+.one-testimonial .testimonials-top {
   display: flex;
 }
 
-.testimonials-top img{
+.testimonials-top img {
   width: 150px;
   height: 180px;
   border-radius: 5px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-.one-testimonial .testimonials-top div{
+.one-testimonial .testimonials-top div {
   display: flex;
   flex-direction: column;
 }
 
-.one-testimonial .testimonials-top div p{
+.one-testimonial .testimonials-top div p {
   font-weight: 300;
 }
 
-.testimonials-bottom{
+.testimonials-bottom {
   display: flex;
-  
 }
 
-.testimonials-bottom div{
+.testimonials-bottom div {
   display: flex;
   flex-direction: row;
-
 }
 
-.testimonials-bottom div .star{
+.testimonials-bottom div .star {
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin-right:18px;
+  margin-right: 16px;
   border-radius: 5px;
 }
 
-.testimonials-bottom span{
+.testimonials-bottom span {
   display: block;
   width: 100%;
   text-align: right;
 }
 
-.one-testimonial .testimonials-top h2{
+.one-testimonial .testimonials-top h2 {
   color: #fec02f;
   margin: 0;
   font-size: 30px;
 }
 
-.testimonials-top h3{
+.testimonials-top h3 {
   font-weight: 500;
 }
 .testimonials-top h3,
 .testimonials-top p,
-.testimonials-bottom{
+.testimonials-bottom {
   color: white;
 }
 
 /* CONTACT */
 
-.contact .container-contact h2{
+.contact {
+  background-color: #dcdcdc;
+  height: 90vh;
+}
+
+.contact .container-contact h2 {
   margin-bottom: 60px;
   font-size: 30px;
 }
 
-.contact-center{
+.contact-center {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
-  
 }
 
-
-.one-contact{
+.one-contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,36 +350,35 @@ ul.nav-menu li {
   margin-right: 30px;
 }
 
-.one-contact img{
+.one-contact img {
   width: 80px;
   height: 80px;
   margin-right: 20px;
 }
 
-.one-contact a{
+.one-contact a {
   text-decoration: underline;
 }
 
-.contact-center .one-contact a, .one-contact span{
+.contact-center .one-contact a,
+.one-contact span {
   font-size: 20px;
-  
 }
 
-
-.container-contact h3{
+.container-contact h3 {
   text-align: center;
   font-size: 40px;
   letter-spacing: 3px;
   word-spacing: 5px;
 }
 
-
-@media screen and (max-width: 1300px){
- /* and (max-height: 700px){ */
+@media screen and (max-width: 1300px) {
+  /* and (max-height: 700px){ */
   main {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: fit-content;
   }
 
   .left {
@@ -388,12 +386,12 @@ ul.nav-menu li {
     width: 0;
     opacity: 0;
   }
-  
+
   .right {
     padding: 1rem 3rem;
     width: 90%;
     margin-left: 10px;
-    height:auto;
+    height: auto;
   }
 
   .left.active {
@@ -406,9 +404,8 @@ ul.nav-menu li {
     transition: all 0.5s ease;
   }
 
-  .nav-menu .dots{
+  .nav-menu .dots {
     display: none;
-
   }
   .nav-el {
     text-align: center;
@@ -453,16 +450,21 @@ ul.nav-menu li {
   .description div {
     font-size: 15px;
   }
+
+  .contact {
+    background-color: #dcdcdc;
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 930px) {
   main {
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
     margin: 0;
   }
 
-  main .left{
+  main .left {
     height: 100vh;
   }
 
@@ -470,7 +472,6 @@ ul.nav-menu li {
     margin: 0;
     width: 100%;
   }
-  
 
   .about-me-bottom {
     flex-direction: column;
@@ -493,31 +494,28 @@ ul.nav-menu li {
     font-size: 16px;
   }
 
-  .details{
+  .details {
     display: flex;
     flex-direction: column;
   }
 
- .container-testimonials{
+  .container-testimonials {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* flex-wrap: nowrap; */
-
   }
 
-  .one-testimonial{
+  .one-testimonial {
     width: 380px;
   }
 
-  .testimonials header h1{
+  .testimonials header h1 {
     font-size: 3rem;
   }
 
-  
-
-  .contact-center{
+  .contact-center {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -525,17 +523,13 @@ ul.nav-menu li {
     margin-bottom: 40px;
   }
 
-  .one-contact{
+  .one-contact {
     /* align-items: end; */
     justify-content: left;
     margin-bottom: 20px;
     width: 90%;
   }
-
- 
 }
-
-
 
 @media screen and (max-width: 660px) {
   header h1 {
@@ -574,16 +568,15 @@ ul.nav-menu li {
     right: 20px;
   }
 
-  .one-testimonial{
+  .one-testimonial {
     width: 90%;
   }
 
-  .testimonials header h1{
+  .testimonials header h1 {
     font-size: 2.3rem;
   }
 
-  .container-contact h3{
+  .container-contact h3 {
     font-size: 35px;
   }
-
 }
